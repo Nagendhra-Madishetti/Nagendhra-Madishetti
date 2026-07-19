@@ -1,8 +1,9 @@
-<img src="assets/hero.svg" alt="Nagendhra Madishetti - memory for machines. AI infrastructure, RAG systems, agent memory." width="100%">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+  <img src="assets/hero-light.svg" alt="Nagendhra Madishetti. Memory for machines: AI infrastructure, RAG systems, agent memory." width="100%">
+</picture>
 
 <div align="center">
-
-[![](https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=500&size=15&duration=3000&pause=900&color=D8FF4F&center=true&vCenter=true&width=760&lines=Every+AI+agent+forgets+the+moment+the+session+ends.;I+build+the+layer+that+remembers+-+and+proves+it.;pip+install+ragbrain)](https://pypi.org/project/ragbrain/)
 
 **[Interactive demo](https://nagendhra-madishetti.github.io/ragbrain/replay.html)**
 &nbsp;·&nbsp;
@@ -18,21 +19,27 @@
 
 I build memory infrastructure for AI agents: retrieval systems that hold context across time, know when their own knowledge changed, and can prove what they believed at any past moment. Most retrieval systems answer *what is true now*. Mine also answers *what did we believe then*, which is the difference between a plausible answer and a defensible one.
 
-Currently: **[RAGBrain](https://github.com/Nagendhra-Madishetti/ragbrain)**, an open-source bi-temporal RAG platform, live on PyPI. Previously and ongoing: maintainer on **[open-design](https://github.com/nexu-io/open-design)**, and the reporter behind **CVE-2026-48121** in LangGraph's memory layer.
+Currently building **[RAGBrain](https://github.com/Nagendhra-Madishetti/ragbrain)**, an open-source bi-temporal RAG platform, live on PyPI. Maintainer on **[open-design](https://github.com/nexu-io/open-design)**. Reporter behind **CVE-2026-48121** in LangGraph's memory layer.
 
 <br>
 
 ## Selected work
 
-<img src="assets/work.svg" alt="Selected work index" width="100%">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/work-dark.svg">
+  <img src="assets/work-light.svg" alt="Selected work: RAGBrain, open-design, Immortal, memory-bank, CVE-2026-48121" width="100%">
+</picture>
 
 <br>
 
 ## The invariant
 
-<img src="assets/timeline.svg" alt="System-time replay: what the ledger knew at each moment" width="100%">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/timeline-dark.svg">
+  <img src="assets/timeline-light.svg" alt="System-time replay: the ledger reports only what it had learned at each moment" width="100%">
+</picture>
 
-Every fact carries two independent time axes: **event time** (when it was true in the world) and **system time** (when the system learned it). A correction expires the old fact and stamps what superseded it, so nothing is ever silently overwritten.
+Every fact carries two independent time axes: **event time**, when it was true in the world, and **system time**, when the system learned it. A correction expires the old fact and stamps what superseded it, so nothing is ever silently overwritten.
 
 Replaying to a past moment therefore drops everything learned after it, including the knowledge that a fact was later corrected. That is the un-knowing invariant, and it is enforced in CI against a live graph database on every commit.
 
@@ -44,15 +51,12 @@ Replaying to a past moment therefore drops everything learned after it, includin
 
 <br>
 
-## Telemetry
-
-<img src="assets/stats.svg" alt="Verified project metrics" width="100%">
-
-<br>
-
 ## Stack
 
-<img src="assets/stack.svg" alt="Stack: languages, AI and retrieval, data and memory, platform" width="100%">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
+  <img src="assets/stack-light.svg" alt="Stack: languages, AI and retrieval, data and memory, platform" width="100%">
+</picture>
 
 <br>
 
@@ -92,7 +96,7 @@ Memory layers hold the most sensitive data an agent has. They deserve adversaria
 - **Every plug fails loud.** A missing key raises. Nothing silently degrades to a weaker embedder and pretends it worked.
 - **The probabilistic tier is fenced off.** LLM falsification and faithfulness checking are advisory, never mutating the deterministic ledger.
 - **Multi-replica ready.** Shared session state, durable write-back journal, rate limits, metrics endpoint, two-replica proof.
-- **Honest evaluation.** Published bounds are derived from measurement and never widened to make a test pass.
+- **Honest evaluation.** Published bounds are derived from measurement and never widened to make a test pass. 164 tests green in CI.
 
 </details>
 
@@ -120,9 +124,15 @@ My earlier account, now retired, earned its badges the hard way: `Quickdraw` · 
 
 <sub>Building something in agent memory, RAG, or AI infrastructure? I would like to hear about it.</sub>
 
-[![](https://img.shields.io/badge/nagendhra.madishetti24@gmail.com-08090A?style=for-the-badge&logo=gmail&logoColor=D8FF4F&labelColor=08090A)](mailto:nagendhra.madishetti24@gmail.com)
-[![](https://img.shields.io/badge/LinkedIn-08090A?style=for-the-badge&logo=linkedin&logoColor=D8FF4F&labelColor=08090A)](https://www.linkedin.com/in/nagendhramadishetti/)
-[![](https://img.shields.io/badge/PyPI-08090A?style=for-the-badge&logo=pypi&logoColor=D8FF4F&labelColor=08090A)](https://pypi.org/project/ragbrain/)
+<br><br>
+
+[![Email](https://img.shields.io/badge/nagendhra.madishetti24@gmail.com-1F2328?style=flat-square&logo=gmail&logoColor=white)](mailto:nagendhra.madishetti24@gmail.com)
+&nbsp;
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-1F2328?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nagendhramadishetti/)
+&nbsp;
+[![PyPI](https://img.shields.io/badge/pip_install_ragbrain-1F2328?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/project/ragbrain/)
+
+<br>
 
 <sub>New York, NY &nbsp;·&nbsp; he/him</sub>
 
