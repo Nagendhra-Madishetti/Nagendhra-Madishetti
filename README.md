@@ -52,13 +52,7 @@ Replaying to a past moment therefore drops everything learned after it, includin
 
 ## Stack
 
-<div align="center">
-
-[![](https://skillicons.dev/icons?i=python,pytorch,fastapi,docker,kubernetes,redis,neo4j,postgres,ts,nextjs,react,aws,gcp,githubactions,linux&perline=15&theme=dark)](https://github.com/Nagendhra-Madishetti/ragbrain)
-
-<sub>`RAG pipelines` &nbsp; `temporal knowledge graphs` &nbsp; `agent memory` &nbsp; `vector search` &nbsp; `rerankers`<br>`LLM orchestration` &nbsp; `evaluation at scale` &nbsp; `self-hosted inference` &nbsp; `MCP` &nbsp; `observability`</sub>
-
-</div>
+<img src="assets/stack.svg" alt="Stack: languages, AI and retrieval, data and memory, platform" width="100%">
 
 <br>
 
