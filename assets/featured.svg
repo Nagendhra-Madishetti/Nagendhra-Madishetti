@@ -1,0 +1,95 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Top picks: featured repositories">
+  <defs>
+    <linearGradient id="pRag" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7C3AED"/><stop offset="0.5" stop-color="#E50914"/><stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="pDesign" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3178C6"/><stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <linearGradient id="pImmortal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00ADD8"/><stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+    <linearGradient id="pMem" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F59E0B"/><stop offset="1" stop-color="#E50914"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#181818" stop-opacity="0"/><stop offset="1" stop-color="#181818"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="360" fill="#141414"/>
+  <text x="20" y="34" font-family="Arial Black, Arial, sans-serif" font-size="19" font-weight="900" fill="#ffffff">Top Picks for You</text>
+  <text x="1180" y="34" text-anchor="end" font-family="Arial, sans-serif" font-size="12" letter-spacing="2" fill="#6d6d6d">6 TITLES</text>
+
+  <!-- CARD 1 · RAGBrain (featured) -->
+  <g transform="translate(20,56)">
+    <rect width="282" height="284" rx="14" fill="#181818" stroke="#E50914" stroke-width="1.5"/>
+    <rect x="0" y="0" width="282" height="150" rx="14" fill="url(#pRag)"/>
+    <rect x="0" y="120" width="282" height="30" fill="url(#fade)"/>
+    <text x="20" y="52" font-family="Arial Black, Arial, sans-serif" font-size="34" font-weight="900" fill="#ffffff" opacity="0.92">RB</text>
+    <rect x="20" y="66" width="70" height="20" rx="4" fill="#141414" fill-opacity="0.55"/>
+    <text x="30" y="80" font-family="Arial, sans-serif" font-size="11" letter-spacing="1" fill="#fff">FEATURED</text>
+    <text x="20" y="182" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#46d369">98% Match</text>
+    <text x="98" y="182" font-family="Arial, sans-serif" font-size="11" fill="#6d6d6d">PyPI &#183; live</text>
+    <text x="20" y="208" font-family="Arial Black, Arial, sans-serif" font-size="20" font-weight="900" fill="#ffffff">RAGBrain</text>
+    <text x="20" y="232" font-family="Arial, sans-serif" font-size="12" fill="#b3b3b3">Bi-temporal RAG. Remembers what</text>
+    <text x="20" y="248" font-family="Arial, sans-serif" font-size="12" fill="#b3b3b3">it knew, and when it knew it.</text>
+    <g font-family="Arial, sans-serif" font-size="10.5" fill="#b3b3b3">
+      <rect x="20" y="262" width="52" height="18" rx="9" fill="#252525"/><text x="30" y="274">Python</text>
+      <rect x="80" y="262" width="42" height="18" rx="9" fill="#252525"/><text x="90" y="274">RAG</text>
+      <rect x="130" y="262" width="76" height="18" rx="9" fill="#252525"/><text x="140" y="274">Agents</text>
+    </g>
+  </g>
+
+  <!-- CARD 2 · open-design -->
+  <g transform="translate(322,56)">
+    <rect width="282" height="284" rx="14" fill="#181818"/>
+    <rect x="0" y="0" width="282" height="150" rx="14" fill="url(#pDesign)"/>
+    <rect x="0" y="120" width="282" height="30" fill="url(#fade)"/>
+    <text x="20" y="52" font-family="Arial Black, Arial, sans-serif" font-size="34" font-weight="900" fill="#ffffff" opacity="0.92">OD</text>
+    <text x="20" y="182" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#46d369">Maintainer</text>
+    <text x="118" y="182" font-family="Arial, sans-serif" font-size="11" fill="#6d6d6d">465 commits</text>
+    <text x="20" y="208" font-family="Arial Black, Arial, sans-serif" font-size="20" font-weight="900" fill="#ffffff">open-design</text>
+    <text x="20" y="232" font-family="Arial, sans-serif" font-size="12" fill="#b3b3b3">Local-first, open-source design</text>
+    <text x="20" y="248" font-family="Arial, sans-serif" font-size="12" fill="#b3b3b3">platform. Collaborator + maintainer.</text>
+    <g font-family="Arial, sans-serif" font-size="10.5" fill="#b3b3b3">
+      <rect x="20" y="262" width="82" height="18" rx="9" fill="#252525"/><text x="30" y="274">TypeScript</text>
+      <rect x="110" y="262" width="66" height="18" rx="9" fill="#252525"/><text x="120" y="274">Design</text>
+    </g>
+  </g>
+
+  <!-- CARD 3 · Immortal -->
+  <g transform="translate(624,56)">
+    <rect width="282" height="284" rx="14" fill="#181818"/>
+    <rect x="0" y="0" width="282" height="150" rx="14" fill="url(#pImmortal)"/>
+    <rect x="0" y="120" width="282" height="30" fill="url(#fade)"/>
+    <text x="20" y="52" font-family="Arial Black, Arial, sans-serif" font-size="34" font-weight="900" fill="#ffffff" opacity="0.92">IM</text>
+    <text x="20" y="182" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#46d369">Self-healing</text>
+    <text x="118" y="182" font-family="Arial, sans-serif" font-size="11" fill="#6d6d6d">79 Go packages</text>
+    <text x="20" y="208" font-family="Arial Black, Arial, sans-serif" font-size="20" font-weight="900" fill="#ffffff">Immortal</text>
+    <text x="20" y="232" font-family="Arial, sans-serif" font-size="12" fill="#b3b3b3">The self-healing engine for modern</text>
+    <text x="20" y="248" font-family="Arial, sans-serif" font-size="12" fill="#b3b3b3">infrastructure. Post-quantum audit.</text>
+    <g font-family="Arial, sans-serif" font-size="10.5" fill="#b3b3b3">
+      <rect x="20" y="262" width="34" height="18" rx="9" fill="#252525"/><text x="30" y="274">Go</text>
+      <rect x="62" y="262" width="52" height="18" rx="9" fill="#252525"/><text x="72" y="274">SRE</text>
+      <rect x="122" y="262" width="60" height="18" rx="9" fill="#252525"/><text x="132" y="274">DevOps</text>
+    </g>
+  </g>
+
+  <!-- CARD 4 · memory-bank -->
+  <g transform="translate(926,56)">
+    <rect width="282" height="284" rx="14" fill="#181818"/>
+    <rect x="0" y="0" width="282" height="150" rx="14" fill="url(#pMem)"/>
+    <rect x="0" y="120" width="282" height="30" fill="url(#fade)"/>
+    <text x="20" y="52" font-family="Arial Black, Arial, sans-serif" font-size="34" font-weight="900" fill="#ffffff" opacity="0.92">MB</text>
+    <text x="20" y="182" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#46d369">Agent memory</text>
+    <text x="128" y="182" font-family="Arial, sans-serif" font-size="11" fill="#6d6d6d">token-efficient</text>
+    <text x="20" y="208" font-family="Arial Black, Arial, sans-serif" font-size="20" font-weight="900" fill="#ffffff">memory-bank</text>
+    <text x="20" y="232" font-family="Arial, sans-serif" font-size="12" fill="#b3b3b3">Persistent memory for AI coding</text>
+    <text x="20" y="248" font-family="Arial, sans-serif" font-size="12" fill="#b3b3b3">agents. Branch-aware, self-healing.</text>
+    <g font-family="Arial, sans-serif" font-size="10.5" fill="#b3b3b3">
+      <rect x="20" y="262" width="52" height="18" rx="9" fill="#252525"/><text x="30" y="274">Python</text>
+      <rect x="80" y="262" width="56" height="18" rx="9" fill="#252525"/><text x="90" y="274">Memory</text>
+    </g>
+  </g>
+</svg>

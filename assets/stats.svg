@@ -1,0 +1,58 @@
+<svg width="1200" height="240" viewBox="0 0 1200 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Profile statistics">
+  <defs>
+    <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E50914"/><stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="240" fill="#141414"/>
+  <text x="20" y="34" font-family="Arial Black, Arial, sans-serif" font-size="19" font-weight="900" fill="#ffffff">The Numbers</text>
+  <text x="1180" y="34" text-anchor="end" font-family="Arial, sans-serif" font-size="12" letter-spacing="2" fill="#6d6d6d">VERIFIED &#183; NO FABRICATION</text>
+
+  <!-- stat tiles -->
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(20,58)">
+      <rect width="222" height="150" rx="12" fill="#181818"/>
+      <rect x="0" y="0" width="4" height="150" rx="2" fill="url(#rail)"/>
+      <text x="24" y="66" font-family="Arial Black, Arial, sans-serif" font-size="46" font-weight="900" fill="#E50914">v0.1.0</text>
+      <text x="24" y="96" font-size="14" font-weight="700" fill="#ffffff">Live on PyPI</text>
+      <text x="24" y="118" font-size="12" fill="#b3b3b3">pip install ragbrain</text>
+      <text x="24" y="138" font-size="11" fill="#6d6d6d">trusted publishing &#183; CI green</text>
+    </g>
+    <g transform="translate(262,58)">
+      <rect width="222" height="150" rx="12" fill="#181818"/>
+      <rect x="0" y="0" width="4" height="150" rx="2" fill="url(#rail)"/>
+      <text x="24" y="66" font-family="Arial Black, Arial, sans-serif" font-size="46" font-weight="900" fill="#E50914">465</text>
+      <text x="24" y="96" font-size="14" font-weight="700" fill="#ffffff">Commits to open-design</text>
+      <text x="24" y="118" font-size="12" fill="#b3b3b3">collaborator &amp; maintainer</text>
+      <text x="24" y="138" font-size="11" fill="#6d6d6d">136 branches of feature work</text>
+    </g>
+    <g transform="translate(504,58)">
+      <rect width="222" height="150" rx="12" fill="#181818"/>
+      <rect x="0" y="0" width="4" height="150" rx="2" fill="url(#rail)"/>
+      <text x="24" y="66" font-family="Arial Black, Arial, sans-serif" font-size="42" font-weight="900" fill="#E50914">1 CVE</text>
+      <text x="24" y="96" font-size="14" font-weight="700" fill="#ffffff">CVE-2026-48121</text>
+      <text x="24" y="118" font-size="12" fill="#b3b3b3">NoSQL injection, LangGraph</text>
+      <text x="24" y="138" font-size="11" fill="#6d6d6d">credited reporter</text>
+    </g>
+  </g>
+
+  <!-- language bar -->
+  <g transform="translate(746,58)">
+    <rect width="434" height="150" rx="12" fill="#181818"/>
+    <text x="24" y="34" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Most Used Languages</text>
+    <!-- bar: Python 69.8 TS 27.6 rest 2.6 (widths of 386) -->
+    <g transform="translate(24,54)">
+      <rect x="0"     y="0" width="269" height="14" rx="3" fill="#3776AB"/>
+      <rect x="271"   y="0" width="107" height="14" fill="#3178C6"/>
+      <rect x="380"   y="0" width="6"   height="14" rx="3" fill="#F1E05A"/>
+    </g>
+    <g font-family="Arial, sans-serif" font-size="12" transform="translate(24,92)">
+      <circle cx="4" cy="-4" r="4" fill="#3776AB"/><text x="14" y="0" fill="#b3b3b3">Python 69.8%</text>
+      <circle cx="134" cy="-4" r="4" fill="#3178C6"/><text x="144" y="0" fill="#b3b3b3">TypeScript 27.6%</text>
+    </g>
+    <g font-family="Arial, sans-serif" font-size="11" transform="translate(24,116)" fill="#6d6d6d">
+      <text x="0" y="0">Go &#183; CSS &#183; Shell &#183; Docker &#183; the rest of the modern AI-infra stack</text>
+    </g>
+    <text x="24" y="140" font-family="Arial, sans-serif" font-size="11" fill="#6d6d6d">Python for the engine, TypeScript for the platform.</text>
+  </g>
+</svg>
