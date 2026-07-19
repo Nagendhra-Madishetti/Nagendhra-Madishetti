@@ -1,95 +1,118 @@
-<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Top picks: featured repositories">
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Top 5 projects: RAGBrain, open-design, Immortal, memory-bank, mlflow">
   <defs>
-    <linearGradient id="pRag" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#7C3AED"/><stop offset="0.5" stop-color="#E50914"/><stop offset="1" stop-color="#22D3EE"/>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4C1D95"/><stop offset="0.55" stop-color="#E50914"/><stop offset="1" stop-color="#0891B2"/>
     </linearGradient>
-    <linearGradient id="pDesign" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#3178C6"/><stop offset="1" stop-color="#0EA5E9"/>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1E3A8A"/><stop offset="1" stop-color="#38BDF8"/>
     </linearGradient>
-    <linearGradient id="pImmortal" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#00ADD8"/><stop offset="1" stop-color="#0F766E"/>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#064E3B"/><stop offset="1" stop-color="#00ADD8"/>
     </linearGradient>
-    <linearGradient id="pMem" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#F59E0B"/><stop offset="1" stop-color="#E50914"/>
+    <linearGradient id="g4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7C2D12"/><stop offset="1" stop-color="#F59E0B"/>
     </linearGradient>
-    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#181818" stop-opacity="0"/><stop offset="1" stop-color="#181818"/>
+    <linearGradient id="g5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#312E81"/><stop offset="1" stop-color="#6366F1"/>
     </linearGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.45" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.78"/>
+    </linearGradient>
+    <filter id="drop" x="-30%" y="-30%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
   </defs>
 
-  <rect width="1200" height="360" fill="#141414"/>
-  <text x="20" y="34" font-family="Arial Black, Arial, sans-serif" font-size="19" font-weight="900" fill="#ffffff">Top Picks for You</text>
-  <text x="1180" y="34" text-anchor="end" font-family="Arial, sans-serif" font-size="12" letter-spacing="2" fill="#6d6d6d">6 TITLES</text>
+  <rect width="1200" height="300" fill="#141414"/>
+  <text x="20" y="30" font-family="Arial Black, Impact, sans-serif" font-size="17" font-weight="900" fill="#ffffff">Top 5 in Tech Today</text>
+  <text x="1180" y="30" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="10.5" letter-spacing="2" fill="#5a5a5a">RANKED BY IMPACT</text>
 
-  <!-- CARD 1 · RAGBrain (featured) -->
-  <g transform="translate(20,56)">
-    <rect width="282" height="284" rx="14" fill="#181818" stroke="#E50914" stroke-width="1.5"/>
-    <rect x="0" y="0" width="282" height="150" rx="14" fill="url(#pRag)"/>
-    <rect x="0" y="120" width="282" height="30" fill="url(#fade)"/>
-    <text x="20" y="52" font-family="Arial Black, Arial, sans-serif" font-size="34" font-weight="900" fill="#ffffff" opacity="0.92">RB</text>
-    <rect x="20" y="66" width="70" height="20" rx="4" fill="#141414" fill-opacity="0.55"/>
-    <text x="30" y="80" font-family="Arial, sans-serif" font-size="11" letter-spacing="1" fill="#fff">FEATURED</text>
-    <text x="20" y="182" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#46d369">98% Match</text>
-    <text x="98" y="182" font-family="Arial, sans-serif" font-size="11" fill="#6d6d6d">PyPI &#183; live</text>
-    <text x="20" y="208" font-family="Arial Black, Arial, sans-serif" font-size="20" font-weight="900" fill="#ffffff">RAGBrain</text>
-    <text x="20" y="232" font-family="Arial, sans-serif" font-size="12" fill="#b3b3b3">Bi-temporal RAG. Remembers what</text>
-    <text x="20" y="248" font-family="Arial, sans-serif" font-size="12" fill="#b3b3b3">it knew, and when it knew it.</text>
-    <g font-family="Arial, sans-serif" font-size="10.5" fill="#b3b3b3">
-      <rect x="20" y="262" width="52" height="18" rx="9" fill="#252525"/><text x="30" y="274">Python</text>
-      <rect x="80" y="262" width="42" height="18" rx="9" fill="#252525"/><text x="90" y="274">RAG</text>
-      <rect x="130" y="262" width="76" height="18" rx="9" fill="#252525"/><text x="140" y="274">Agents</text>
+  <!-- 1 · RAGBrain -->
+  <g>
+    <text x="14" y="252" font-family="Arial Black, Impact, sans-serif" font-size="188" font-weight="900"
+          fill="#141414" stroke="#4a4a4a" stroke-width="3">1</text>
+    <g filter="url(#drop)">
+      <rect x="96" y="56" width="132" height="196" rx="9" fill="url(#g1)"/>
+      <g stroke="#fff" stroke-opacity="0.5" fill="none">
+        <circle cx="162" cy="118" r="15"/><circle cx="162" cy="118" r="27" stroke-opacity="0.3"/><circle cx="162" cy="118" r="39" stroke-opacity="0.16"/>
+      </g>
+      <circle cx="162" cy="118" r="5" fill="#fff"/>
+      <line x1="162" y1="118" x2="162" y2="80" stroke="#fff" stroke-opacity="0.75" stroke-width="2"/>
+      <rect x="96" y="152" width="132" height="100" fill="url(#shade)"/>
+      <rect x="96" y="56" width="132" height="196" rx="9" fill="none" stroke="#E50914" stroke-width="2"/>
+      <text x="108" y="224" font-family="Arial Black, Impact, sans-serif" font-size="15" font-weight="900" fill="#ffffff">RAGBrain</text>
+      <text x="108" y="240" font-family="Arial, Helvetica, sans-serif" font-size="9.5" fill="#46d369">98% Match &#183; on PyPI</text>
     </g>
+    <text x="14" y="276" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#8a8a8a">Bi-temporal RAG &#183; Python</text>
   </g>
 
-  <!-- CARD 2 · open-design -->
-  <g transform="translate(322,56)">
-    <rect width="282" height="284" rx="14" fill="#181818"/>
-    <rect x="0" y="0" width="282" height="150" rx="14" fill="url(#pDesign)"/>
-    <rect x="0" y="120" width="282" height="30" fill="url(#fade)"/>
-    <text x="20" y="52" font-family="Arial Black, Arial, sans-serif" font-size="34" font-weight="900" fill="#ffffff" opacity="0.92">OD</text>
-    <text x="20" y="182" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#46d369">Maintainer</text>
-    <text x="118" y="182" font-family="Arial, sans-serif" font-size="11" fill="#6d6d6d">465 commits</text>
-    <text x="20" y="208" font-family="Arial Black, Arial, sans-serif" font-size="20" font-weight="900" fill="#ffffff">open-design</text>
-    <text x="20" y="232" font-family="Arial, sans-serif" font-size="12" fill="#b3b3b3">Local-first, open-source design</text>
-    <text x="20" y="248" font-family="Arial, sans-serif" font-size="12" fill="#b3b3b3">platform. Collaborator + maintainer.</text>
-    <g font-family="Arial, sans-serif" font-size="10.5" fill="#b3b3b3">
-      <rect x="20" y="262" width="82" height="18" rx="9" fill="#252525"/><text x="30" y="274">TypeScript</text>
-      <rect x="110" y="262" width="66" height="18" rx="9" fill="#252525"/><text x="120" y="274">Design</text>
+  <!-- 2 · open-design -->
+  <g transform="translate(236,0)">
+    <text x="14" y="252" font-family="Arial Black, Impact, sans-serif" font-size="188" font-weight="900"
+          fill="#141414" stroke="#4a4a4a" stroke-width="3">2</text>
+    <g filter="url(#drop)">
+      <rect x="96" y="56" width="132" height="196" rx="9" fill="url(#g2)"/>
+      <g fill="#fff" fill-opacity="0.28">
+        <rect x="122" y="92" width="46" height="46" rx="5"/>
+        <circle cx="186" cy="115" r="24"/>
+        <rect x="140" y="132" width="52" height="30" rx="15" fill-opacity="0.2"/>
+      </g>
+      <rect x="96" y="152" width="132" height="100" fill="url(#shade)"/>
+      <text x="108" y="224" font-family="Arial Black, Impact, sans-serif" font-size="14" font-weight="900" fill="#ffffff">open-design</text>
+      <text x="108" y="240" font-family="Arial, Helvetica, sans-serif" font-size="9.5" fill="#46d369">Maintainer &#183; 465 commits</text>
     </g>
+    <text x="14" y="276" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#8a8a8a">Design platform &#183; TypeScript</text>
   </g>
 
-  <!-- CARD 3 · Immortal -->
-  <g transform="translate(624,56)">
-    <rect width="282" height="284" rx="14" fill="#181818"/>
-    <rect x="0" y="0" width="282" height="150" rx="14" fill="url(#pImmortal)"/>
-    <rect x="0" y="120" width="282" height="30" fill="url(#fade)"/>
-    <text x="20" y="52" font-family="Arial Black, Arial, sans-serif" font-size="34" font-weight="900" fill="#ffffff" opacity="0.92">IM</text>
-    <text x="20" y="182" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#46d369">Self-healing</text>
-    <text x="118" y="182" font-family="Arial, sans-serif" font-size="11" fill="#6d6d6d">79 Go packages</text>
-    <text x="20" y="208" font-family="Arial Black, Arial, sans-serif" font-size="20" font-weight="900" fill="#ffffff">Immortal</text>
-    <text x="20" y="232" font-family="Arial, sans-serif" font-size="12" fill="#b3b3b3">The self-healing engine for modern</text>
-    <text x="20" y="248" font-family="Arial, sans-serif" font-size="12" fill="#b3b3b3">infrastructure. Post-quantum audit.</text>
-    <g font-family="Arial, sans-serif" font-size="10.5" fill="#b3b3b3">
-      <rect x="20" y="262" width="34" height="18" rx="9" fill="#252525"/><text x="30" y="274">Go</text>
-      <rect x="62" y="262" width="52" height="18" rx="9" fill="#252525"/><text x="72" y="274">SRE</text>
-      <rect x="122" y="262" width="60" height="18" rx="9" fill="#252525"/><text x="132" y="274">DevOps</text>
+  <!-- 3 · Immortal -->
+  <g transform="translate(472,0)">
+    <text x="14" y="252" font-family="Arial Black, Impact, sans-serif" font-size="188" font-weight="900"
+          fill="#141414" stroke="#4a4a4a" stroke-width="3">3</text>
+    <g filter="url(#drop)">
+      <rect x="96" y="56" width="132" height="196" rx="9" fill="url(#g3)"/>
+      <polyline points="106,120 130,120 140,96 152,144 164,110 176,128 188,120 218,120"
+                fill="none" stroke="#fff" stroke-opacity="0.8" stroke-width="2.5" stroke-linejoin="round"/>
+      <circle cx="152" cy="144" r="3.5" fill="#fff"/>
+      <rect x="96" y="152" width="132" height="100" fill="url(#shade)"/>
+      <text x="108" y="224" font-family="Arial Black, Impact, sans-serif" font-size="15" font-weight="900" fill="#ffffff">Immortal</text>
+      <text x="108" y="240" font-family="Arial, Helvetica, sans-serif" font-size="9.5" fill="#46d369">Self-healing &#183; 79 packages</text>
     </g>
+    <text x="14" y="276" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#8a8a8a">Infra reliability &#183; Go</text>
   </g>
 
-  <!-- CARD 4 · memory-bank -->
-  <g transform="translate(926,56)">
-    <rect width="282" height="284" rx="14" fill="#181818"/>
-    <rect x="0" y="0" width="282" height="150" rx="14" fill="url(#pMem)"/>
-    <rect x="0" y="120" width="282" height="30" fill="url(#fade)"/>
-    <text x="20" y="52" font-family="Arial Black, Arial, sans-serif" font-size="34" font-weight="900" fill="#ffffff" opacity="0.92">MB</text>
-    <text x="20" y="182" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#46d369">Agent memory</text>
-    <text x="128" y="182" font-family="Arial, sans-serif" font-size="11" fill="#6d6d6d">token-efficient</text>
-    <text x="20" y="208" font-family="Arial Black, Arial, sans-serif" font-size="20" font-weight="900" fill="#ffffff">memory-bank</text>
-    <text x="20" y="232" font-family="Arial, sans-serif" font-size="12" fill="#b3b3b3">Persistent memory for AI coding</text>
-    <text x="20" y="248" font-family="Arial, sans-serif" font-size="12" fill="#b3b3b3">agents. Branch-aware, self-healing.</text>
-    <g font-family="Arial, sans-serif" font-size="10.5" fill="#b3b3b3">
-      <rect x="20" y="262" width="52" height="18" rx="9" fill="#252525"/><text x="30" y="274">Python</text>
-      <rect x="80" y="262" width="56" height="18" rx="9" fill="#252525"/><text x="90" y="274">Memory</text>
+  <!-- 4 · memory-bank -->
+  <g transform="translate(708,0)">
+    <text x="14" y="252" font-family="Arial Black, Impact, sans-serif" font-size="188" font-weight="900"
+          fill="#141414" stroke="#4a4a4a" stroke-width="3">4</text>
+    <g filter="url(#drop)">
+      <rect x="96" y="56" width="132" height="196" rx="9" fill="url(#g4)"/>
+      <g fill="#fff">
+        <rect x="122" y="92"  width="80" height="13" rx="6" fill-opacity="0.85"/>
+        <rect x="122" y="112" width="80" height="13" rx="6" fill-opacity="0.55"/>
+        <rect x="122" y="132" width="80" height="13" rx="6" fill-opacity="0.3"/>
+      </g>
+      <rect x="96" y="152" width="132" height="100" fill="url(#shade)"/>
+      <text x="108" y="224" font-family="Arial Black, Impact, sans-serif" font-size="13.5" font-weight="900" fill="#ffffff">memory-bank</text>
+      <text x="108" y="240" font-family="Arial, Helvetica, sans-serif" font-size="9.5" fill="#46d369">Agent memory &#183; 44 stars</text>
     </g>
+    <text x="14" y="276" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#8a8a8a">Persistent context &#183; Python</text>
+  </g>
+
+  <!-- 5 · mlflow -->
+  <g transform="translate(944,0)">
+    <text x="14" y="252" font-family="Arial Black, Impact, sans-serif" font-size="188" font-weight="900"
+          fill="#141414" stroke="#4a4a4a" stroke-width="3">5</text>
+    <g filter="url(#drop)">
+      <rect x="96" y="56" width="132" height="196" rx="9" fill="url(#g5)"/>
+      <g stroke="#fff" stroke-opacity="0.75" stroke-width="2.5" fill="none">
+        <path d="M112 138 C 140 138, 140 100, 168 100"/>
+        <path d="M168 100 C 196 100, 196 138, 214 138"/>
+      </g>
+      <circle cx="112" cy="138" r="4.5" fill="#fff"/><circle cx="168" cy="100" r="4.5" fill="#fff"/><circle cx="214" cy="138" r="4.5" fill="#fff"/>
+      <rect x="96" y="152" width="132" height="100" fill="url(#shade)"/>
+      <text x="108" y="224" font-family="Arial Black, Impact, sans-serif" font-size="15" font-weight="900" fill="#ffffff">mlflow</text>
+      <text x="108" y="240" font-family="Arial, Helvetica, sans-serif" font-size="9.5" fill="#46d369">Contributor &#183; upstream</text>
+    </g>
+    <text x="14" y="276" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#8a8a8a">ML lifecycle &#183; open source</text>
   </g>
 </svg>

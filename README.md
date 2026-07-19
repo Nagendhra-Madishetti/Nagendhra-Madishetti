@@ -40,9 +40,15 @@ Every AI agent today forgets you the moment the session ends. Worse, when a fact
 </tr>
 </table>
 
-## 📺 TOP PICKS FOR YOU
+## ⏮️ THE SIGNATURE MOVE
 
-<img src="assets/featured.svg" alt="Featured repositories" width="100%">
+<img src="assets/timeline.svg" alt="Animated bi-temporal timeline: what the system knew at each moment" width="100%">
+
+<div align="center"><sub>Watch the scrubber. Before 2022 the ledger reports Boston with <b>no known end date</b> - because the correction had not been learned yet.<br>That is the un-knowing invariant, and it is enforced in CI against a live graph database.</sub></div>
+
+## 📺 TOP 5 IN TECH TODAY
+
+<img src="assets/featured.svg" alt="Top 5 projects" width="100%">
 
 <div align="center">
 

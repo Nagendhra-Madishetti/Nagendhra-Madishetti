@@ -1,59 +1,118 @@
-<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nagendhra Madishetti · AI Infrastructure, RAG Systems, Agent Memory">
+<svg width="1200" height="340" viewBox="0 0 1200 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nagendhra Madishetti - AI Infrastructure, RAG Systems, Agent Memory">
   <defs>
-    <radialGradient id="glow" cx="50%" cy="120%" r="90%">
-      <stop offset="0%" stop-color="#E50914" stop-opacity="0.22"/>
-      <stop offset="45%" stop-color="#E50914" stop-opacity="0.07"/>
+    <radialGradient id="stage" cx="50%" cy="118%" r="85%">
+      <stop offset="0%"  stop-color="#E50914" stop-opacity="0.30"/>
+      <stop offset="38%" stop-color="#7C1020" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurora1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E50914" stop-opacity="0.34"/>
       <stop offset="100%" stop-color="#E50914" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#E50914" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#FF2A1F" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#E50914" stop-opacity="0"/>
+    <radialGradient id="aurora2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig" cx="50%" cy="50%" r="72%">
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.85"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"   stop-color="#E50914" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FF6B5A" stop-opacity="1"/>
+      <stop offset="1"   stop-color="#E50914" stop-opacity="0"/>
     </linearGradient>
-    <filter id="blur6" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6"/>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"    stop-color="#E50914" stop-opacity="0"/>
+      <stop offset="0.5"  stop-color="#E50914" stop-opacity="0.55"/>
+      <stop offset="1"    stop-color="#E50914" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="9"/></filter>
+    <filter id="wide"><feGaussianBlur stdDeviation="34"/></filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
     </filter>
+    <clipPath id="frame"><rect width="1200" height="340"/></clipPath>
   </defs>
 
-  <rect width="1200" height="300" fill="#141414"/>
-  <rect width="1200" height="300" fill="url(#glow)"/>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="340" fill="#0A0A0A"/>
 
-  <!-- top-left channel tag -->
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.15s" fill="freeze"/>
-    <rect x="46" y="40" width="34" height="34" rx="6" fill="#E50914"/>
-    <text x="63" y="65" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="24" font-weight="900" fill="#141414">N</text>
-    <text x="94" y="63" font-family="Arial, sans-serif" font-size="13" letter-spacing="4" fill="#b3b3b3">NOW STREAMING &#183; NEW YORK</text>
+    <!-- drifting aurora -->
+    <ellipse cx="380" cy="300" rx="300" ry="150" fill="url(#aurora1)" filter="url(#wide)">
+      <animate attributeName="cx" values="380;520;380" dur="19s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="880" cy="320" rx="270" ry="140" fill="url(#aurora2)" filter="url(#wide)">
+      <animate attributeName="cx" values="880;730;880" dur="23s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- perspective horizon: depth without decoration -->
+    <g stroke="#E50914" stroke-opacity="0.10">
+      <line x1="0" y1="300" x2="1200" y2="300"/>
+      <line x1="0" y1="316" x2="1200" y2="316" stroke-opacity="0.07"/>
+      <line x1="0" y1="332" x2="1200" y2="332" stroke-opacity="0.05"/>
+    </g>
+    <g stroke="#E50914" stroke-opacity="0.07">
+      <line x1="600" y1="288" x2="180"  y2="340"/>
+      <line x1="600" y1="288" x2="420"  y2="340"/>
+      <line x1="600" y1="288" x2="780"  y2="340"/>
+      <line x1="600" y1="288" x2="1020" y2="340"/>
+    </g>
+
+    <rect width="1200" height="340" fill="url(#stage)"/>
+
+    <!-- channel bug -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.1s" fill="freeze"/>
+      <rect x="46" y="40" width="32" height="32" rx="5" fill="#E50914"/>
+      <text x="62" y="63" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-size="22" font-weight="900" fill="#0A0A0A">N</text>
+      <text x="90" y="61" font-family="Arial, Helvetica, sans-serif" font-size="11.5" letter-spacing="4.5" fill="#8a8a8a">NOW STREAMING &#183; NEW YORK</text>
+    </g>
+    <text x="1154" y="61" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11.5" letter-spacing="3.5" fill="#5a5a5a" opacity="0">
+      2026 &#183; ORIGINAL SERIES
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.25s" fill="freeze"/>
+    </text>
+
+    <!-- name: glow bed -->
+    <text x="600" y="186" text-anchor="middle" font-family="Arial Black, Impact, Helvetica, sans-serif"
+          font-size="62" font-weight="900" letter-spacing="3" fill="#E50914"
+          textLength="990" lengthAdjust="spacingAndGlyphs" filter="url(#soft)" opacity="0">
+      NAGENDHRA MADISHETTI
+      <animate attributeName="opacity" values="0;0.6" dur="1s" begin="0.3s" fill="freeze"/>
+      <animate attributeName="opacity" values="0.6;0.34;0.6" dur="6s" begin="1.6s" repeatCount="indefinite"/>
+    </text>
+    <!-- name: crisp -->
+    <text x="600" y="186" text-anchor="middle" font-family="Arial Black, Impact, Helvetica, sans-serif"
+          font-size="62" font-weight="900" letter-spacing="3" fill="#F5F5F5"
+          textLength="990" lengthAdjust="spacingAndGlyphs" opacity="0">
+      NAGENDHRA MADISHETTI
+      <animate attributeName="opacity" values="0;1" dur="0.85s" begin="0.3s" fill="freeze"/>
+    </text>
+
+    <!-- hairline + travelling beam -->
+    <rect x="205" y="206" width="790" height="1" fill="url(#hair)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.9s" fill="freeze"/>
+    </rect>
+    <rect x="205" y="205" width="150" height="2.5" rx="1.25" fill="url(#beam)" opacity="0">
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.85;1" dur="3.4s" begin="1.1s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="205;845" dur="3.4s" begin="1.1s" repeatCount="indefinite"/>
+    </rect>
+
+    <text x="600" y="248" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+          font-size="15.5" letter-spacing="8" fill="#c9c9c9" opacity="0">
+      AI INFRASTRUCTURE &#183; RAG SYSTEMS &#183; AGENT MEMORY
+      <animate attributeName="opacity" values="0;1" dur="0.7s" begin="1.0s" fill="freeze"/>
+    </text>
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.7s" begin="1.3s" fill="freeze"/>
+      <text x="600" y="284" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2.5" fill="#7a7a7a">
+        CREATOR OF RAGBRAIN &#160;&#183;&#160; OPEN DESIGN MAINTAINER &#160;&#183;&#160; CVE-2026-48121
+      </text>
+    </g>
+
+    <rect width="1200" height="340" fill="url(#vig)"/>
+    <rect width="1200" height="340" filter="url(#grain)" opacity="0.055" style="mix-blend-mode:overlay"/>
   </g>
-
-  <!-- glow copy of the name -->
-  <text x="600" y="168" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="58" font-weight="900" letter-spacing="4" fill="#E50914" textLength="980" lengthAdjust="spacingAndGlyphs" filter="url(#blur6)" opacity="0">
-    NAGENDHRA MADISHETTI
-    <animate attributeName="opacity" values="0;0.55" dur="0.9s" begin="0.35s" fill="freeze"/>
-    <animate attributeName="opacity" values="0.55;0.3;0.55" dur="5s" begin="1.6s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- the name -->
-  <text x="600" y="168" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="58" font-weight="900" letter-spacing="4" fill="#E50914" textLength="980" lengthAdjust="spacingAndGlyphs" opacity="0">
-    NAGENDHRA MADISHETTI
-    <animate attributeName="opacity" values="0;1" dur="0.9s" begin="0.35s" fill="freeze"/>
-  </text>
-
-  <!-- red sweep under the name -->
-  <rect x="150" y="188" width="220" height="3" rx="1.5" fill="url(#sweep)" opacity="0">
-    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2.6s" begin="0.9s" repeatCount="indefinite"/>
-    <animate attributeName="x" values="150;830" dur="2.6s" begin="0.9s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- tagline -->
-  <text x="600" y="232" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" letter-spacing="7" fill="#b3b3b3" opacity="0">
-    AI INFRASTRUCTURE &#183; RAG SYSTEMS &#183; AGENT MEMORY
-    <animate attributeName="opacity" values="0;1" dur="0.8s" begin="1.05s" fill="freeze"/>
-  </text>
-
-  <!-- bottom meta line -->
-  <text x="600" y="272" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" letter-spacing="3" fill="#6d6d6d" opacity="0">
-    CREATOR OF RAGBRAIN &#183; OPEN DESIGN COLLABORATOR &#183; CVE-2026-48121
-    <animate attributeName="opacity" values="0;1" dur="0.8s" begin="1.35s" fill="freeze"/>
-  </text>
 </svg>
