@@ -57,11 +57,11 @@ Every AI agent today forgets you the moment the session ends. Worse, when a fact
 ## 🎬 CONTINUE WATCHING
 
 | | Episode | Status |
-|:--:|---|---|
-| ✅ | **S1E1 · Build the substrate** - bi-temporal core, FalkorDB and Neo4j backends, un-knowing invariant enforced in CI | `██████████` shipped |
-| ✅ | **S1E2 · Ship it** - RAGBrain v0.1.0 live on PyPI via trusted publishing, 164 tests green | `██████████` shipped |
-| ▶️ | **S1E3 · The launch** - benchmark story, interactive replay, community launch | `███████░░░` in progress |
-| 🔜 | **S2 · Learned memory** - fine-tuned extraction, consolidation and forgetting; online evaluation at scale | `██░░░░░░░░` next |
+|:--:|---|:--|
+| ✅ | **S1E1 · Build the substrate**<br><sub>Bi-temporal core, FalkorDB and Neo4j backends, un-knowing invariant enforced in CI</sub> | ![](https://img.shields.io/badge/shipped-100%25-46d369?style=flat-square&labelColor=141414) |
+| ✅ | **S1E2 · Ship it**<br><sub>RAGBrain v0.1.0 live on PyPI via trusted publishing, 164 tests green</sub> | ![](https://img.shields.io/badge/shipped-100%25-46d369?style=flat-square&labelColor=141414) |
+| ▶️ | **S1E3 · The launch**<br><sub>Benchmark story, interactive replay, community launch</sub> | ![](https://img.shields.io/badge/airing-70%25-E50914?style=flat-square&labelColor=141414) |
+| 🔜 | **S2 · Learned memory**<br><sub>Fine-tuned extraction, consolidation and forgetting; online evaluation at scale</sub> | ![](https://img.shields.io/badge/coming_soon-20%25-6d6d6d?style=flat-square&labelColor=141414) |
 
 ## 🍿 MY LIST · the modern AI infra stack
 
