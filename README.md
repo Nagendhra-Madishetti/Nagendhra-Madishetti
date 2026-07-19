@@ -30,11 +30,11 @@ Every AI agent today forgets you the moment the session ends. Worse, when a fact
 [![Repo](https://img.shields.io/badge/source-Apache_2.0-141414?style=for-the-badge&logo=github&logoColor=E50914)](https://github.com/Nagendhra-Madishetti/ragbrain)
 
 </td>
-<td width="46%" valign="top">
+<td width="46%" valign="middle" align="center">
 
 <img src="https://github.com/Nagendhra-Madishetti/ragbrain/raw/main/docs/media/replay-demo.gif" alt="System-time replay: scrubbing past the 2022 correction flips the belief" width="100%">
 
-<div align="center"><sub><b>Drag the slider through 2022.</b> The system un-knows the correction and answers as it believed then.</sub></div>
+<sub><b>Drag the slider through 2022.</b> The system un-knows the correction and answers as it believed then.</sub>
 
 </td>
 </tr>
