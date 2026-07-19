@@ -1,0 +1,75 @@
+<svg width="1200" height="492" viewBox="0 0 1200 492" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Selected work index">
+  <defs>
+    <linearGradient id="tick" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D8FF4F"/><stop offset="1" stop-color="#86EFAC"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="492" fill="#08090A"/>
+  <g stroke="#101315">
+    <line x1="64" y1="0" x2="64" y2="492"/><line x1="1136" y1="0" x2="1136" y2="492"/>
+  </g>
+
+  <text x="64" y="48" font-family="SF Mono, Consolas, Menlo, monospace" font-size="11" letter-spacing="2.6" fill="#EDEFF1">SELECTED WORK</text>
+  <text x="1112" y="48" text-anchor="end" font-family="SF Mono, Consolas, Menlo, monospace" font-size="11" letter-spacing="2.6" fill="#4E5459">06 ENTRIES</text>
+  <line x1="64" y1="68" x2="1136" y2="68" stroke="#1A1D1F"/>
+
+  <!-- 01 -->
+  <g>
+    <rect x="64" y="86" width="2" height="44" fill="url(#tick)"/>
+    <text x="86"  y="106" font-family="SF Mono, Consolas, Menlo, monospace" font-size="11" fill="#D8FF4F">01</text>
+    <text x="132" y="110" font-family="Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif" font-size="21" font-weight="600" letter-spacing="-0.6" fill="#EDEFF1">RAGBrain</text>
+    <text x="132" y="130" font-family="Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif" font-size="12.5" fill="#6B7176">Bi-temporal RAG platform. Answers what was true, and what was known.</text>
+    <text x="700" y="110" font-family="SF Mono, Consolas, Menlo, monospace" font-size="10.5" fill="#4E5459">PYTHON</text>
+    <text x="1112" y="110" text-anchor="end" font-family="SF Mono, Consolas, Menlo, monospace" font-size="11" fill="#EDEFF1">v0.1.0 &#183; PyPI</text>
+    <text x="1112" y="130" text-anchor="end" font-family="SF Mono, Consolas, Menlo, monospace" font-size="10.5" fill="#4E5459">creator</text>
+    <line x1="64" y1="150" x2="1136" y2="150" stroke="#141719"/>
+  </g>
+
+  <!-- 02 -->
+  <g>
+    <text x="86"  y="180" font-family="SF Mono, Consolas, Menlo, monospace" font-size="11" fill="#4E5459">02</text>
+    <text x="132" y="184" font-family="Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif" font-size="21" font-weight="600" letter-spacing="-0.6" fill="#EDEFF1">open-design</text>
+    <text x="132" y="204" font-family="Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif" font-size="12.5" fill="#6B7176">Local-first, open-source design platform. 400+ contributors upstream.</text>
+    <text x="700" y="184" font-family="SF Mono, Consolas, Menlo, monospace" font-size="10.5" fill="#4E5459">TYPESCRIPT</text>
+    <text x="1112" y="184" text-anchor="end" font-family="SF Mono, Consolas, Menlo, monospace" font-size="11" fill="#EDEFF1">465 commits</text>
+    <text x="1112" y="204" text-anchor="end" font-family="SF Mono, Consolas, Menlo, monospace" font-size="10.5" fill="#4E5459">maintainer</text>
+    <line x1="64" y1="224" x2="1136" y2="224" stroke="#141719"/>
+  </g>
+
+  <!-- 03 -->
+  <g>
+    <text x="86"  y="254" font-family="SF Mono, Consolas, Menlo, monospace" font-size="11" fill="#4E5459">03</text>
+    <text x="132" y="258" font-family="Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif" font-size="21" font-weight="600" letter-spacing="-0.6" fill="#EDEFF1">Immortal</text>
+    <text x="132" y="278" font-family="Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif" font-size="12.5" fill="#6B7176">Self-healing engine for infrastructure. Post-quantum signed audit trail.</text>
+    <text x="700" y="258" font-family="SF Mono, Consolas, Menlo, monospace" font-size="10.5" fill="#4E5459">GO</text>
+    <text x="1112" y="258" text-anchor="end" font-family="SF Mono, Consolas, Menlo, monospace" font-size="11" fill="#EDEFF1">79 packages</text>
+    <text x="1112" y="278" text-anchor="end" font-family="SF Mono, Consolas, Menlo, monospace" font-size="10.5" fill="#4E5459">creator</text>
+    <line x1="64" y1="298" x2="1136" y2="298" stroke="#141719"/>
+  </g>
+
+  <!-- 04 -->
+  <g>
+    <text x="86"  y="328" font-family="SF Mono, Consolas, Menlo, monospace" font-size="11" fill="#4E5459">04</text>
+    <text x="132" y="332" font-family="Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif" font-size="21" font-weight="600" letter-spacing="-0.6" fill="#EDEFF1">memory-bank</text>
+    <text x="132" y="352" font-family="Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif" font-size="12.5" fill="#6B7176">Persistent memory for coding agents. Branch-aware, token-efficient.</text>
+    <text x="700" y="332" font-family="SF Mono, Consolas, Menlo, monospace" font-size="10.5" fill="#4E5459">PYTHON</text>
+    <text x="1112" y="332" text-anchor="end" font-family="SF Mono, Consolas, Menlo, monospace" font-size="11" fill="#EDEFF1">44 stars</text>
+    <text x="1112" y="352" text-anchor="end" font-family="SF Mono, Consolas, Menlo, monospace" font-size="10.5" fill="#4E5459">creator</text>
+    <line x1="64" y1="372" x2="1136" y2="372" stroke="#141719"/>
+  </g>
+
+  <!-- 05 -->
+  <g>
+    <text x="86"  y="402" font-family="SF Mono, Consolas, Menlo, monospace" font-size="11" fill="#4E5459">05</text>
+    <text x="132" y="406" font-family="Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif" font-size="21" font-weight="600" letter-spacing="-0.6" fill="#EDEFF1">CVE-2026-48121</text>
+    <text x="132" y="426" font-family="Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif" font-size="12.5" fill="#6B7176">Cross-tenant memory disclosure in LangGraph&#8217;s checkpointer. Reported, fixed.</text>
+    <text x="700" y="406" font-family="SF Mono, Consolas, Menlo, monospace" font-size="10.5" fill="#4E5459">SECURITY</text>
+    <text x="1112" y="406" text-anchor="end" font-family="SF Mono, Consolas, Menlo, monospace" font-size="11" fill="#EDEFF1">published</text>
+    <text x="1112" y="426" text-anchor="end" font-family="SF Mono, Consolas, Menlo, monospace" font-size="10.5" fill="#4E5459">reporter</text>
+    <line x1="64" y1="446" x2="1136" y2="446" stroke="#141719"/>
+  </g>
+
+  <text x="86"  y="472" font-family="SF Mono, Consolas, Menlo, monospace" font-size="11" fill="#4E5459">06</text>
+  <text x="132" y="472" font-family="SF Mono, Consolas, Menlo, monospace" font-size="11" fill="#6B7176">mlflow, pulseops &#183; upstream contributions</text>
+</svg>

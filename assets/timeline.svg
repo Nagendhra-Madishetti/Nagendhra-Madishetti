@@ -1,123 +1,101 @@
-<svg width="1200" height="430" viewBox="0 0 1200 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated bi-temporal timeline: replaying what the system knew at each moment">
+<svg width="1200" height="380" viewBox="0 0 1200 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="System-time replay: what the ledger knew at each moment">
   <defs>
-    <linearGradient id="bostonG" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3B82F6"/><stop offset="1" stop-color="#2563EB"/>
+    <linearGradient id="known" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.9"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0.35"/>
     </linearGradient>
-    <linearGradient id="denverG" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#E50914"/><stop offset="1" stop-color="#FF6B5A"/>
+    <linearGradient id="fresh" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D8FF4F"/><stop offset="1" stop-color="#86EFAC" stop-opacity="0.55"/>
     </linearGradient>
-    <linearGradient id="panelG" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1c1c1c"/><stop offset="1" stop-color="#141414"/>
+    <linearGradient id="scanline" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="#D8FF4F" stop-opacity="0"/>
+      <stop offset="0.2" stop-color="#D8FF4F" stop-opacity="0.85"/>
+      <stop offset="0.8" stop-color="#D8FF4F" stop-opacity="0.85"/>
+      <stop offset="1"   stop-color="#D8FF4F" stop-opacity="0"/>
     </linearGradient>
-    <filter id="glowRed"><feGaussianBlur stdDeviation="5"/></filter>
-    <clipPath id="clipAll"><rect width="1200" height="430" rx="0"/></clipPath>
   </defs>
 
-  <g clip-path="url(#clipAll)">
-  <rect width="1200" height="430" fill="#141414"/>
+  <rect width="1200" height="380" fill="#08090A"/>
+  <g stroke="#101315"><line x1="64" y1="0" x2="64" y2="380"/><line x1="1136" y1="0" x2="1136" y2="380"/></g>
 
-  <text x="30" y="36" font-family="Arial Black, Impact, sans-serif" font-size="18" font-weight="900" fill="#ffffff">The signature move: system-time replay</text>
-  <text x="30" y="58" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#8a8a8a">One fact, two time axes. Watch the scrubber: the system only knows what it had learned by that moment.</text>
-  <circle cx="1082" cy="32" r="4" fill="#E50914">
-    <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/>
-  </circle>
-  <text x="1170" y="36" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="10.5" letter-spacing="2" fill="#8a8a8a">REPLAYING</text>
+  <text x="64" y="48" font-family="SF Mono, Consolas, Menlo, monospace" font-size="11" letter-spacing="2.6" fill="#EDEFF1">SYSTEM-TIME REPLAY</text>
+  <text x="1136" y="48" text-anchor="end" font-family="SF Mono, Consolas, Menlo, monospace" font-size="11" letter-spacing="2.6" fill="#D8FF4F">&#9679; LIVE</text>
+  <line x1="64" y1="68" x2="1136" y2="68" stroke="#1A1D1F"/>
+  <text x="64" y="92" font-family="Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif" font-size="13" fill="#6B7176">One fact, two axes. The ledger reports only what it had learned by the scrubber&#8217;s position.</text>
 
-  <!-- year grid -->
-  <g font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#5a5a5a" text-anchor="middle">
-    <g stroke="#2a2a2a">
-      <line x1="150"  y1="88" x2="150"  y2="240"/>
-      <line x1="313"  y1="88" x2="313"  y2="240"/>
-      <line x1="476"  y1="88" x2="476"  y2="240"/>
-      <line x1="640"  y1="88" x2="640"  y2="240"/>
-      <line x1="803"  y1="88" x2="803"  y2="240"/>
-      <line x1="966"  y1="88" x2="966"  y2="240"/>
-      <line x1="1130" y1="88" x2="1130" y2="240"/>
+  <!-- axis ticks -->
+  <g font-family="SF Mono, Consolas, Menlo, monospace" font-size="9.5" fill="#3A4045" text-anchor="middle">
+    <g stroke="#141719">
+      <line x1="180" y1="120" x2="180" y2="252"/><line x1="339" y1="120" x2="339" y2="252"/>
+      <line x1="498" y1="120" x2="498" y2="252"/><line x1="657" y1="120" x2="657" y2="252"/>
+      <line x1="816" y1="120" x2="816" y2="252"/><line x1="975" y1="120" x2="975" y2="252"/>
+      <line x1="1134" y1="120" x2="1134" y2="252"/>
     </g>
-    <text x="150" y="80">2018</text><text x="313" y="80">2019</text><text x="476" y="80">2020</text>
-    <text x="640" y="80">2021</text><text x="803" y="80">2022</text><text x="966" y="80">2023</text>
-    <text x="1130" y="80">2024</text>
+    <text x="180" y="114">2018</text><text x="339" y="114">2019</text><text x="498" y="114">2020</text>
+    <text x="657" y="114">2021</text><text x="816" y="114">2022</text><text x="975" y="114">2023</text>
+    <text x="1134" y="114">2024</text>
   </g>
 
-  <!-- EVENT TIME lane -->
-  <text x="30" y="118" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#b3b3b3">EVENT TIME</text>
-  <text x="30" y="134" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#5a5a5a">true in the world</text>
+  <!-- EVENT TIME -->
+  <text x="64" y="146" font-family="SF Mono, Consolas, Menlo, monospace" font-size="9.5" letter-spacing="1.6" fill="#6B7176">EVENT TIME</text>
+  <text x="64" y="160" font-family="SF Mono, Consolas, Menlo, monospace" font-size="9" fill="#3A4045">true in world</text>
 
-  <!-- Boston, from a pre-2022 vantage: no known end -->
   <g opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.155;0.19;0.645;0.68;1" dur="11s" repeatCount="indefinite"/>
-    <rect x="313" y="104" width="817" height="34" rx="6" fill="url(#bostonG)" opacity="0.9"/>
-    <text x="331" y="126" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Boston</text>
-    <text x="1112" y="126" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#dbeafe">valid 2019 &#8594; present</text>
+    <rect x="339" y="140" width="795" height="26" rx="3" fill="url(#known)"/>
+    <text x="353" y="158" font-family="SF Mono, Consolas, Menlo, monospace" font-size="12" font-weight="700" fill="#062A32">BOSTON</text>
+    <text x="1120" y="158" text-anchor="end" font-family="SF Mono, Consolas, Menlo, monospace" font-size="10" fill="#083C46">valid 2019 &#8594; present</text>
   </g>
-  <!-- Boston, once the correction is known: bounded -->
   <g opacity="0">
     <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.645;0.68;1" dur="11s" repeatCount="indefinite"/>
-    <rect x="313" y="104" width="490" height="34" rx="6" fill="url(#bostonG)" opacity="0.42"/>
-    <text x="331" y="126" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#ffffff" opacity="0.75" text-decoration="line-through">Boston</text>
-    <text x="785" y="126" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#c7d9f5">superseded 2022</text>
+    <rect x="339" y="140" width="477" height="26" rx="3" fill="#22D3EE" fill-opacity="0.18"/>
+    <line x1="353" y1="153" x2="418" y2="153" stroke="#5C6266" stroke-width="1"/>
+    <text x="353" y="158" font-family="SF Mono, Consolas, Menlo, monospace" font-size="12" font-weight="700" fill="#5C6266">BOSTON</text>
+    <text x="802" y="158" text-anchor="end" font-family="SF Mono, Consolas, Menlo, monospace" font-size="10" fill="#4E5459">expired 2022</text>
+    <rect x="816" y="140" width="318" height="26" rx="3" fill="url(#fresh)"/>
+    <text x="830" y="158" font-family="SF Mono, Consolas, Menlo, monospace" font-size="12" font-weight="700" fill="#0F1A00">DENVER</text>
+    <text x="1120" y="158" text-anchor="end" font-family="SF Mono, Consolas, Menlo, monospace" font-size="10" fill="#25330A">valid 2022 &#8594; present</text>
   </g>
-  <!-- Denver: exists in the world from 2022, but only visible once learned -->
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.645;0.68;1" dur="11s" repeatCount="indefinite"/>
-    <rect x="803" y="104" width="327" height="34" rx="6" fill="url(#denverG)"/>
-    <text x="821" y="126" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Denver</text>
-    <text x="1112" y="126" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#ffd9d4">valid 2022 &#8594; present</text>
-  </g>
-  <!-- empty-state hint before anything is known -->
-  <text x="640" y="126" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#4a4a4a" opacity="0">
-    nothing known yet
+  <text x="657" y="158" text-anchor="middle" font-family="SF Mono, Consolas, Menlo, monospace" font-size="10.5" fill="#2E3438" opacity="0">
+    no facts known
     <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.155;0.19;1" dur="11s" repeatCount="indefinite"/>
   </text>
 
-  <!-- SYSTEM TIME lane -->
-  <text x="30" y="196" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#b3b3b3">SYSTEM TIME</text>
-  <text x="30" y="212" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#5a5a5a">when we learned it</text>
-  <line x1="150" y1="196" x2="1130" y2="196" stroke="#2f2f2f" stroke-width="2"/>
-
-  <g font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#8a8a8a">
-    <circle cx="313" cy="196" r="6" fill="#3B82F6" stroke="#141414" stroke-width="2"/>
-    <text x="313" y="222" text-anchor="middle">learned: 2019 filing</text>
-    <circle cx="803" cy="196" r="6" fill="#E50914" stroke="#141414" stroke-width="2"/>
-    <text x="803" y="222" text-anchor="middle">learned: 2022 press release</text>
+  <!-- SYSTEM TIME -->
+  <text x="64" y="216" font-family="SF Mono, Consolas, Menlo, monospace" font-size="9.5" letter-spacing="1.6" fill="#6B7176">SYSTEM TIME</text>
+  <text x="64" y="230" font-family="SF Mono, Consolas, Menlo, monospace" font-size="9" fill="#3A4045">when learned</text>
+  <line x1="180" y1="212" x2="1134" y2="212" stroke="#22262A"/>
+  <g font-family="SF Mono, Consolas, Menlo, monospace" font-size="9" fill="#4E5459" text-anchor="middle">
+    <circle cx="339" cy="212" r="3.5" fill="#22D3EE"/><text x="339" y="236">2019 filing</text>
+    <circle cx="816" cy="212" r="3.5" fill="#D8FF4F"/><text x="816" y="236">2022 correction</text>
   </g>
 
-  <!-- the scrubber -->
+  <!-- scrubber -->
   <g>
-    <animateTransform attributeName="transform" type="translate" values="0,0;980,0" dur="11s" repeatCount="indefinite"/>
-    <line x1="150" y1="92" x2="150" y2="200" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.55" stroke-dasharray="3 3"/>
-    <circle cx="150" cy="196" r="9" fill="#E50914" filter="url(#glowRed)" opacity="0.85"/>
-    <circle cx="150" cy="196" r="7" fill="#E50914" stroke="#ffffff" stroke-width="2"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;954,0" dur="11s" repeatCount="indefinite"/>
+    <rect x="179.25" y="124" width="1.5" height="92" fill="url(#scanline)"/>
+    <circle cx="180" cy="212" r="4.5" fill="#08090A" stroke="#D8FF4F" stroke-width="2"/>
   </g>
 
   <!-- readout -->
-  <rect x="30" y="252" width="1140" height="150" rx="14" fill="url(#panelG)" stroke="#2a2a2a"/>
-  <text x="54" y="280" font-family="Arial, Helvetica, sans-serif" font-size="10.5" letter-spacing="2.5" fill="#6d6d6d">REPLAY AT THE SCRUBBER RETURNS</text>
+  <line x1="64" y1="272" x2="1136" y2="272" stroke="#1A1D1F"/>
+  <text x="64" y="294" font-family="SF Mono, Consolas, Menlo, monospace" font-size="9.5" letter-spacing="2" fill="#3A4045">RETURNS</text>
 
-  <g font-family="Arial, Helvetica, sans-serif">
-    <!-- state 1 -->
+  <g>
     <g opacity="0">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.155;0.19;1" dur="11s" repeatCount="indefinite"/>
-      <text x="54" y="322" font-size="25" font-weight="700" fill="#6d6d6d">Nothing known about Acme Corp yet.</text>
-      <text x="54" y="352" font-size="13" fill="#8a8a8a">The ledger is honest about ignorance: it does not guess, and it does not borrow from the future.</text>
-      <text x="54" y="378" font-family="Consolas, monospace" font-size="12" fill="#5a5a5a">system_time_replay(2018) &#8594; []</text>
+      <text x="64" y="330" font-family="Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif" font-size="27" font-weight="600" letter-spacing="-0.8" fill="#4E5459">Nothing known yet.</text>
+      <text x="64" y="356" font-family="SF Mono, Consolas, Menlo, monospace" font-size="10.5" fill="#3A4045">system_time_replay(2018) &#8594; []</text>
     </g>
-    <!-- state 2 -->
     <g opacity="0">
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.155;0.19;0.645;0.68;1" dur="11s" repeatCount="indefinite"/>
-      <text x="54" y="322" font-size="25" font-weight="700" fill="#ffffff">Acme Corp is headquartered in <tspan fill="#60A5FA">Boston</tspan></text>
-      <text x="54" y="352" font-size="13" fill="#8a8a8a">The 2022 correction has not arrived yet, so it is <tspan fill="#c9c9c9" font-weight="700">un-known</tspan> here. No later knowledge leaks backward.</text>
-      <text x="54" y="378" font-family="Consolas, monospace" font-size="12" fill="#5a5a5a">valid 2019-01-01 &#8594; present &#183; source: 2019 annual report</text>
+      <text x="64" y="330" font-family="Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif" font-size="27" font-weight="600" letter-spacing="-0.8" fill="#EDEFF1">Headquarters is <tspan fill="#22D3EE">Boston</tspan>, with no known end date.</text>
+      <text x="64" y="356" font-family="SF Mono, Consolas, Menlo, monospace" font-size="10.5" fill="#4E5459">the 2022 correction is un-known here &#183; no later knowledge leaks backward</text>
     </g>
-    <!-- state 3 -->
     <g opacity="0">
       <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.645;0.68;1" dur="11s" repeatCount="indefinite"/>
-      <text x="54" y="322" font-size="25" font-weight="700" fill="#ffffff">Acme Corp is headquartered in <tspan fill="#FF6B5A">Denver</tspan></text>
-      <text x="54" y="352" font-size="13" fill="#8a8a8a">The correction is ingested: Boston is expired and stamped with what superseded it. Nothing was overwritten.</text>
-      <text x="54" y="378" font-family="Consolas, monospace" font-size="12" fill="#5a5a5a">valid 2022-01-01 &#8594; present &#183; superseded_by: 2022 press release</text>
+      <text x="64" y="330" font-family="Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif" font-size="27" font-weight="600" letter-spacing="-0.8" fill="#EDEFF1">Headquarters is <tspan fill="#D8FF4F">Denver</tspan>. Boston expired, not erased.</text>
+      <text x="64" y="356" font-family="SF Mono, Consolas, Menlo, monospace" font-size="10.5" fill="#4E5459">superseded_by: 2022 press release &#183; full provenance retained</text>
     </g>
   </g>
-
-  <text x="1146" y="392" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a4a4a">pip install ragbrain</text>
-  </g>
+  <text x="1136" y="356" text-anchor="end" font-family="SF Mono, Consolas, Menlo, monospace" font-size="10" fill="#2E3438">pip install ragbrain</text>
 </svg>

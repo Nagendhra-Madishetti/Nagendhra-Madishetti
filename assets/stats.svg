@@ -1,58 +1,55 @@
-<svg width="1200" height="240" viewBox="0 0 1200 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Profile statistics">
+<svg width="1200" height="272" viewBox="0 0 1200 272" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Telemetry: verified project metrics">
   <defs>
-    <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#E50914"/><stop offset="1" stop-color="#7C3AED"/>
+    <linearGradient id="py" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#0EA5E9"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="240" fill="#141414"/>
-  <text x="20" y="34" font-family="Arial Black, Arial, sans-serif" font-size="19" font-weight="900" fill="#ffffff">The Numbers</text>
-  <text x="1180" y="34" text-anchor="end" font-family="Arial, sans-serif" font-size="12" letter-spacing="2" fill="#6d6d6d">VERIFIED &#183; NO FABRICATION</text>
 
-  <!-- stat tiles -->
-  <g font-family="Arial, sans-serif">
-    <g transform="translate(20,58)">
-      <rect width="222" height="150" rx="12" fill="#181818"/>
-      <rect x="0" y="0" width="4" height="150" rx="2" fill="url(#rail)"/>
-      <text x="24" y="66" font-family="Arial Black, Arial, sans-serif" font-size="46" font-weight="900" fill="#E50914">v0.1.0</text>
-      <text x="24" y="96" font-size="14" font-weight="700" fill="#ffffff">Live on PyPI</text>
-      <text x="24" y="118" font-size="12" fill="#b3b3b3">pip install ragbrain</text>
-      <text x="24" y="138" font-size="11" fill="#6d6d6d">trusted publishing &#183; CI green</text>
+  <rect width="1200" height="272" fill="#08090A"/>
+  <g stroke="#101315"><line x1="64" y1="0" x2="64" y2="272"/><line x1="1136" y1="0" x2="1136" y2="272"/></g>
+
+  <text x="64" y="48" font-family="SF Mono, Consolas, Menlo, monospace" font-size="11" letter-spacing="2.6" fill="#EDEFF1">TELEMETRY</text>
+  <text x="1112" y="48" text-anchor="end" font-family="SF Mono, Consolas, Menlo, monospace" font-size="11" letter-spacing="2.6" fill="#4E5459">MEASURED &#183; NOT ESTIMATED</text>
+  <line x1="64" y1="68" x2="1136" y2="68" stroke="#1A1D1F"/>
+
+  <g font-family="SF Mono, Consolas, Menlo, monospace">
+    <g>
+      <text x="64" y="98" font-size="9.5" letter-spacing="1.8" fill="#4E5459">RELEASE</text>
+      <text x="64" y="146" font-family="Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif" font-size="40" font-weight="600" letter-spacing="-1.6" fill="#EDEFF1">v0.1.0</text>
+      <text x="64" y="168" font-size="10" fill="#6B7176">live on PyPI</text>
+      <text x="64" y="184" font-size="10" fill="#3A4045">trusted publishing</text>
     </g>
-    <g transform="translate(262,58)">
-      <rect width="222" height="150" rx="12" fill="#181818"/>
-      <rect x="0" y="0" width="4" height="150" rx="2" fill="url(#rail)"/>
-      <text x="24" y="66" font-family="Arial Black, Arial, sans-serif" font-size="46" font-weight="900" fill="#E50914">465</text>
-      <text x="24" y="96" font-size="14" font-weight="700" fill="#ffffff">Commits to open-design</text>
-      <text x="24" y="118" font-size="12" fill="#b3b3b3">collaborator &amp; maintainer</text>
-      <text x="24" y="138" font-size="11" fill="#6d6d6d">136 branches of feature work</text>
+    <g>
+      <text x="332" y="98" font-size="9.5" letter-spacing="1.8" fill="#4E5459">CONTRIBUTED</text>
+      <text x="332" y="146" font-family="Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif" font-size="40" font-weight="600" letter-spacing="-1.6" fill="#EDEFF1">465</text>
+      <text x="332" y="168" font-size="10" fill="#6B7176">commits, open-design</text>
+      <text x="332" y="184" font-size="10" fill="#3A4045">136 branches</text>
     </g>
-    <g transform="translate(504,58)">
-      <rect width="222" height="150" rx="12" fill="#181818"/>
-      <rect x="0" y="0" width="4" height="150" rx="2" fill="url(#rail)"/>
-      <text x="24" y="66" font-family="Arial Black, Arial, sans-serif" font-size="42" font-weight="900" fill="#E50914">1 CVE</text>
-      <text x="24" y="96" font-size="14" font-weight="700" fill="#ffffff">CVE-2026-48121</text>
-      <text x="24" y="118" font-size="12" fill="#b3b3b3">NoSQL injection, LangGraph</text>
-      <text x="24" y="138" font-size="11" fill="#6d6d6d">credited reporter</text>
+    <g>
+      <text x="600" y="98" font-size="9.5" letter-spacing="1.8" fill="#4E5459">DISCLOSED</text>
+      <text x="600" y="146" font-family="Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif" font-size="40" font-weight="600" letter-spacing="-1.6" fill="#D8FF4F">1 CVE</text>
+      <text x="600" y="168" font-size="10" fill="#6B7176">CVE-2026-48121</text>
+      <text x="600" y="184" font-size="10" fill="#3A4045">credited reporter</text>
+    </g>
+    <g>
+      <text x="868" y="98" font-size="9.5" letter-spacing="1.8" fill="#4E5459">VERIFIED</text>
+      <text x="868" y="146" font-family="Helvetica Neue, Helvetica, Segoe UI, Arial, sans-serif" font-size="40" font-weight="600" letter-spacing="-1.6" fill="#EDEFF1">164</text>
+      <text x="868" y="168" font-size="10" fill="#6B7176">tests green in CI</text>
+      <text x="868" y="184" font-size="10" fill="#3A4045">replay invariant enforced</text>
     </g>
   </g>
 
-  <!-- language bar -->
-  <g transform="translate(746,58)">
-    <rect width="434" height="150" rx="12" fill="#181818"/>
-    <text x="24" y="34" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Most Used Languages</text>
-    <!-- bar: Python 69.8 TS 27.6 rest 2.6 (widths of 386) -->
-    <g transform="translate(24,54)">
-      <rect x="0"     y="0" width="269" height="14" rx="3" fill="#3776AB"/>
-      <rect x="271"   y="0" width="107" height="14" fill="#3178C6"/>
-      <rect x="380"   y="0" width="6"   height="14" rx="3" fill="#F1E05A"/>
-    </g>
-    <g font-family="Arial, sans-serif" font-size="12" transform="translate(24,92)">
-      <circle cx="4" cy="-4" r="4" fill="#3776AB"/><text x="14" y="0" fill="#b3b3b3">Python 69.8%</text>
-      <circle cx="134" cy="-4" r="4" fill="#3178C6"/><text x="144" y="0" fill="#b3b3b3">TypeScript 27.6%</text>
-    </g>
-    <g font-family="Arial, sans-serif" font-size="11" transform="translate(24,116)" fill="#6d6d6d">
-      <text x="0" y="0">Go &#183; CSS &#183; Shell &#183; Docker &#183; the rest of the modern AI-infra stack</text>
-    </g>
-    <text x="24" y="140" font-family="Arial, sans-serif" font-size="11" fill="#6d6d6d">Python for the engine, TypeScript for the platform.</text>
+  <line x1="64" y1="212" x2="1136" y2="212" stroke="#1A1D1F"/>
+  <text x="64" y="236" font-family="SF Mono, Consolas, Menlo, monospace" font-size="9.5" letter-spacing="1.8" fill="#4E5459">LANGUAGE DISTRIBUTION</text>
+
+  <g>
+    <rect x="336"  y="228" width="524" height="6" rx="3" fill="url(#py)"/>
+    <rect x="864"  y="228" width="208" height="6" fill="#6366F1"/>
+    <rect x="1076" y="228" width="36"  height="6" rx="3" fill="#3A4045"/>
+  </g>
+  <g font-family="SF Mono, Consolas, Menlo, monospace" font-size="9.5" fill="#6B7176">
+    <text x="336"  y="256">PYTHON 69.8%</text>
+    <text x="864"  y="256">TYPESCRIPT 27.6%</text>
+    <text x="1112" y="256" text-anchor="end" fill="#3A4045">GO / CSS / SHELL 2.6%</text>
   </g>
 </svg>
